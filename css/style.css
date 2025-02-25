@@ -5,15 +5,39 @@ body{
 h2{
     font-family: Quintessential;
 }
+
 .tunnel1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
+    right: 50%;
+    bottom: 30%;
+
+    height: auto;
+    width: 100%;
+    text-align: center;
+ }
+
+ #image{
+     width: 240px;
+     height: 240px;
+ }
+
+
+ .tunnel2{
+     left: 55%;
+     bottom: 7%;
+     position: absolute;
+ }
+
+ h4{
+    position: absolute;
+    right: 150px;
+    width: 300px;
+     font-family: "Aladin", serif;
+    font-weight: 400;
+   font-style: normal;
 }
-.tunnel2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
+h1{
+    text-align: center;
+     font-family: "Aladin", serif;
+    font-weight: 400;
+   font-style: normal;
 }
