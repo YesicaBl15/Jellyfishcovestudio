@@ -2,9 +2,7 @@ body{
     background-color: rgb(3, 3, 29)
 
 } 
-h2{
-    font-family: Quintessential;
-}
+
 
 .tunnel1{
     right: 50%;
@@ -27,17 +25,28 @@ h2{
      position: absolute;
  }
 
+
+
  h4{
     position: absolute;
     right: 150px;
     width: 300px;
-     font-family: "Aladin", serif;
-    font-weight: 400;
-   font-style: normal;
+   font-family: "Quintessential";
+   font-size: 35px;
 }
-h1{
+
+
+.right{
     text-align: center;
-     font-family: "Aladin", serif;
-    font-weight: 400;
-   font-style: normal;
+    font-family: "Quintessential";
+    font-size: 45px;
 }
+
+
+
+@font-face{
+    font-family: Quintessential;
+    src: url(..//fonts/Quintessential-Regular.ttf);
+}
+
+
