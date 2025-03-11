@@ -2,3 +2,9 @@ body{
     background-color: rgb(3, 3, 29)
 
 } 
+
+h1{
+    font-family: "Quintessential";
+   font-size: 25px;
+   color:#DFEDFF;
+}
