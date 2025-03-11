@@ -3,15 +3,23 @@ body{
 
 } 
 
-
+.container1{
+    height: 200px;
+    position: relative;
+    
+}
 .tunnel1{
     right: 50%;
     bottom: 30%;
 
-    height: auto;
-    width: 100%;
-    text-align: center;
- }
+    margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+ 
 
  #image{
      width: 240px;
@@ -19,14 +27,20 @@ body{
  }
 
 
+.container2{
+    height: 200px;
+    position: relative;
+}
+
  .tunnel2{
-     left: 55%;
-     bottom: 7%;
-     
-     height: auto;
-     width: 100%;
-     text-align: center;
- }
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+ 
 
 
 
@@ -37,6 +51,7 @@ body{
    font-family: "Quintessential";
    font-size: 25px;
    color:#DFEDFF;
+   
 }
 
 
