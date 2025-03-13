@@ -11,7 +11,6 @@ body{
 .tunnel1{
     right: 50%;
     bottom: 30%;
-
     margin: 0;
   position: absolute;
   top: 40%;
@@ -20,6 +19,17 @@ body{
   transform: translate(-50%, -50%);
 }
  
+.tunnelname1{
+    position: absolute;
+    top: 50%; /* Position the text below the button */
+    left: 100%; /* Center the text horizontally */
+    transform: translateX(160%); /* Adjust for centering */
+    margin-left: 10px; /* Add space between the button and text */
+    font-size: 35px;
+    color: #DFEDFF;
+    font-family: "Quintessential";
+}
+
 
  #image{
      width: 240px;
@@ -30,6 +40,7 @@ body{
 .container2{
     height: 200px;
     position: relative;
+    align-items: center;
 }
 
  .tunnel2{
@@ -41,18 +52,15 @@ body{
     transform: translate(-50%, -50%);
 }
  
-
-
-
- h4{
-    position: absolute;
-    right: 200px;
-    width: 285px;
-   font-family: "Quintessential";
-   font-size: 25px;
-   color:#DFEDFF;
-   
+.tunnelname2{
+    top: 50%;
+    margin-right: -60px; /* Add space between text and button */
+    transform: translateX(-160%); /* Adjust for centering */
+    font-size: 35px;
+    color: #DFEDFF;
+    font-family: "Quintessential";
 }
+
 
 
 .right{
