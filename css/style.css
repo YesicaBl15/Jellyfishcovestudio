@@ -1,7 +1,13 @@
+
 body{
     background-color: rgb(3, 3, 29)
 
 } 
+.button{
+    width: "20px";
+    height: "20px";
+}
+
 
 .container1{
     height: 200px;
