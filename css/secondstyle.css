@@ -6,3 +6,15 @@ body{
 .img{
     background-image: url(./images/Draftsecondpage.jpg);
 }
+.paragraphy1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:aliceblue;
+    font-size: 36px;
+    padding: 100px 0 ;
+  border: 3px gery;
+  text-align: center;
+  background-color: rgb(0,22,30,0.3);
+}
