@@ -3,6 +3,52 @@ body{
 
 } 
 
-.img{
-    background-image: url(./images/draftthirdpage.jpg);
+
+.nextbtn{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    left: 95%;
+}
+
+  
+  .nextbtn:hover {
+    background-color: rgb(93, 62, 15);
+}
+
+.nextbtn2{
+    position: absolute;
+    top:50%;
+    right:100px;
+    left: 3%;
+
+}
+
+#dialogue-box {
+    width: 400px;
+    padding: 20px;
+    border: 2px solid #333;
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+    margin: 50px auto;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+}
+#text {
+    min-height: 60px;
+    margin-bottom: 10px;
+}
+ 
+.btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+.btn:disabled {
+    background-color: #999;
+    cursor: not-allowed;
 }

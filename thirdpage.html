@@ -8,6 +8,57 @@
     <link rel='stylesheet' href="./css/thirdpage.css"> 
 </head>
 <body>
-    <p style="text-align:center"><img src="./images/draftthirdpage .jpg">
+    <div calss="wym">
+        
+    <p><img src="./images/thirdpage .jpg"></p>
+    <a href="kraken.html"><img class="nextbtn" src="./images/next.PNG"></a>
+    <a href="index.html"><img class="nextbtn2" src="./images/next_2.PNG"></a>
+    </div>
+
+    <div id="dialogue-box">
+        <div id="text">Click "Next" to begin.</div>
+        <button id="back-btn" class="btn" disabled>Back</button>
+        <button id="next-btn" class="btn">Next</button>
+      </div>
+    
+      <script>
+        const dialogue = [
+          "wElcOmE ERrO",
+          "ERrO ERrO ERrO ERrO",
+          "ERrO ERrO ERrO",
+          "ERROR!"
+        ];
+      
+        let index = 0;
+        const textElement = document.getElementById('text');
+        const nextButton = document.getElementById('next-btn');
+        const backButton = document.getElementById('back-btn');
+      
+        function updateDialogue() {
+          textElement.textContent = dialogue[index];
+          backButton.disabled = index === 0;
+          nextButton.disabled = index === dialogue.length - 1;
+        }
+      
+        nextButton.addEventListener('click', () => {
+          if (index < dialogue.length - 1) {
+            index++;
+            updateDialogue();
+          }
+        });
+      
+        backButton.addEventListener('click', () => {
+          if (index > 0) {
+            index--;
+            updateDialogue();
+          }
+        });
+      
+        // Initialize first line
+        updateDialogue();
+      </script>
+
+
+
 </body>
 </html>

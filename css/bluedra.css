@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(3, 3, 29)
+
+} 
+
+.btnnex2{
+    position: absolute;
+    top:50%;
+    right:100px;
+    left: 3%;
+ }
+
+.btnnes2:hover {
+    background-color: rgb(93, 62, 15);
+  }

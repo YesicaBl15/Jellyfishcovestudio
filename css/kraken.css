@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(3, 3, 29)
+
+} 
+.nexbtn{
+    position: absolute;
+    top: 50%;
+    right:100px;
+    left:90px;
+}

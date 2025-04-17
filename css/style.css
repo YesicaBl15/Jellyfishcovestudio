@@ -1,10 +1,7 @@
 
 body{
-    background-color: rgb(3, 3, 29)
-
+    background-color: rgb(3, 3, 29);
 } 
-
-
 
 
 /* nav-list*/ 
@@ -27,14 +24,12 @@ body{
 
 .nav-list li a{
     text-decoration:none;
-    color:#DFEDFF;
-    font-size: 18px;
     padding:10px 20px;
     display:block;
     transition: backgrond-color 0.3s ease;
 }
 .nav-list li a:hover{
-    background-color: black;
+    background-color: rgb(104, 46, 15);
     border-radius: 5px;
 }
 
@@ -48,7 +43,7 @@ body{
 
 /*main buttoms*/
 .container1{
-    height: 200px;
+    height: 300px;
     position: relative;
     
 }
@@ -65,8 +60,8 @@ body{
  
 .tunnelname1{
     position: relative;
-    top:10%;
-    left: 7%; /* Center the text horizontally */
+    bottom:11%;
+    left: 12%; /* Center the text horizontally */
     transform: translateX(100px); /* Adjust for centering */
     font-size: 36px;
     color: #DFEDFF;
@@ -79,8 +74,8 @@ body{
  }
 
 
-.container2{
-    height: 200px;
+.container2 .tunnel2{
+    height: 390px;
     position: relative;
     align-items: center;
 }
@@ -90,14 +85,12 @@ body{
     position: relative;
     top: 75%;
     left: 45%;
-    -ms-transform: translate(-50px, -50px);
-    transform: translate(-50px, -50px);
 }
  
 .tunnelname2{
    text-align: left;
    position: relative;
-   right: 5%;
+   right: -13%;
     font-size: 36px;
     color: #DFEDFF;
     font-family: "Quintessential";
@@ -122,3 +115,59 @@ body{
     src: url(..//fonts/Quintessential-Regular.ttf);
 }
 
+
+.about{
+    font-family: "Quintessential";
+    font-size: 36px;
+    text-align: center;
+    color:#DFEDFF;
+}
+
+.infor{
+    font-family: "Quintessential";
+    font-size: 16px;
+    text-align: center;
+    color:#DFEDFF;
+
+}
+
+.textabout .infor .about{
+    height: 350px;
+    position: absolute;
+    left:40%;
+    top:1000px;
+    right: 100px;
+
+}
+
+footer{
+    background-color: rgb(3, 3, 29);
+    color: #DFEDFF;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin:20px auto;
+}
+
+input, textarea{
+    margin: 10px 0;
+    padding:10px;
+    width: 100%;
+}
+
+.contactb{
+    background-color: rgb(13, 13, 127);
+    color: #DFEDFF;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.contactb:hover{
+    background-color: aliceblue;
+}
