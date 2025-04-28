@@ -57,16 +57,65 @@
      <h2>Contact Me</h2>
      <form action="https://formspree.io/f/mwplpdyb" method="post">
       <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Name" required>
-      <textarea name="message" placeholder="Your Name" required></textarea>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Will a message!" required></textarea>
       <buttin class="contactb" type="submit">Send Message</buttin>
      </form>
   </div>
 </footer>
 </section>
-<img id="moving-image" src="./images/bubbles.PNG" alt="Moving">
+<div id="floaters">
+   <img src="./images/bubbles.PNG" class="bubbles" id="img0">
+   <img src="./images/bubble1.PNG" class="bubbles" id="img1">
+   <img src="./images/bubble2.PNG" class="bubbles" id="img2">
+   <img src="./images/bubble3.PNG" class="bubbles" id="img3">
+   <img src="./images/bubbles.PNG" class="bubbles" id="img4">
+</div> 
 
+<script>
+const images = [];
+const directions = [];
+const speedsX = [];
+const speedsY = [];
 
+for (let i = 0; i < 5; i++) {
+  const img = document.getElementById('img' + i);
+  img.style.left = `${Math.random() * window.innerWidth}px`;
+  img.style.top = `${window.innerHeight}px`;
+  images.push(img);
+  directions.push(Math.random() < 0.5 ? -1 : 1);
+  speedsX.push(1 + Math.random() * 2);
+  speedsY.push(0.5 + Math.random() * 1);
+}
+
+function moveImages() {
+  images.forEach((img, index) => {
+    let left = parseFloat(img.style.left);
+    let top = parseFloat(img.style.top);
+
+    // Bounce horizontally
+    if (left <= 0 || left >= window.innerWidth - 50) {
+      directions[index] *= -1;
+    }
+
+    left += directions[index] * speedsX[index];
+    top -= speedsY[index];
+
+    // Reset to bottom if off screen
+    if (top < -50) {
+      top = window.innerHeight;
+    }
+
+    img.style.left = `${left}px`;
+    img.style.top = `${top}px`;
+  });
+
+  requestAnimationFrame(moveImages);
+}
+
+moveImages();
+
+</script>
 
 </body>
 

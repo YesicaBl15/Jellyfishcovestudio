@@ -3,6 +3,20 @@ body{
 
 } 
 
+.btnformain{
+    position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+ }
+ .btnformain:hover {
+    background-color: rgb(93, 62, 15);
+  }
 
 .next {
     position: absolute;
@@ -12,30 +26,19 @@ body{
 }
   
  .next:hover {
-    background-color: rgb(93, 62, 15);
+    background-color: rgb(93, 62, 15)
  }
-
- .btnnex2{
-    position: absolute;
-    top:50%;
-    right:100px;
-    left: 3%;
- }
-
-.btnnes2:hover {
-    background-color: rgb(93, 62, 15);
-  }
 
 
 
 
 #dialogue-box {
       width: 400px;
-      padding: 20px;
-      border: 2px solid #333;
-      background-color: #f9f9f9;
-      font-family: sans-serif;
-      margin: 50px auto;
+      padding: 25px;
+      border: 2px solid #3333330a;
+      background-color: #cfcfcf99;
+      font-family: "Quintessential";
+      margin: 60px auto;
       position: absolute;
       top: 90%;
       left: 40%;
@@ -46,14 +49,15 @@ body{
  }
    
  .btn {
+    font-family: 'Quintessential';
       padding: 10px 15px;
-      background-color: #007bff;
-      color: white;
+      background-color: #071423;
+      color: rgb(244, 246, 255);
       border: none;
       cursor: pointer;
       margin: 5px;
 }
 .btn:disabled {
-      background-color: #999;
+      background-color: #071423;
       cursor: not-allowed;
 }
