@@ -3,11 +3,14 @@ body{
 
 } 
 
-.btnnex2{
+#nextbtn2{
     position: absolute;
-    top:50%;
-    right:100px;
-    left: 3%;
+  top: 50%;
+  left: 2%;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
  }
 
 .btnnes2:hover {

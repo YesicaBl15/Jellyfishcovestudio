@@ -3,12 +3,10 @@ body{
 
 } 
 
-.btnformain{
+#btnformain{
     position: absolute;
   top: 50%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  left: 2%;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
@@ -40,8 +38,8 @@ body{
       font-family: "Quintessential";
       margin: 60px auto;
       position: absolute;
-      top: 90%;
-      left: 40%;
+      top: 60%;
+    left: 40%;
 }
  #text {
       min-height: 60px;

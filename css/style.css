@@ -30,7 +30,7 @@ body{
 }
 .nav-list li a:hover{
     background-color: rgb(104, 46, 15);
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 /*end of nav-list*/
